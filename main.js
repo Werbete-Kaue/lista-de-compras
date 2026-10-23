@@ -30,6 +30,7 @@ function salvarItem() {
 
 function mostrarItem() {
     ulItens.innerHTML = ""
+    ulItensComprados.innerHTML = ""
     listaDeItens.forEach((elemento,index) => {
         if(elemento.checar){
         ulItensComprados.innerHTML += `
