@@ -19,7 +19,8 @@ function salvarItem() {
         alert("item ja existe")
     } else {
     listaDeItens.push({
-        valor: comprasItem
+        valor: comprasItem,
+        checar: false
     })
     }
     
@@ -46,7 +47,7 @@ function mostrarItem() {
 
     inputsCheck.forEach(i => {
         i.addEventListener("click", (evento) => {
-            console.log("FUI CLICADO")
+            const valorDoElemento = evento.target.parentElement.parentElement.getAttribute("data-value")
         })
     })
 }
